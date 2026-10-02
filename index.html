@@ -14,7 +14,7 @@
 <header class="hero">
 <div class="eyebrow">LOVE COMPATIBILITY ENGINE</div>
 <h1>💕 ふたりの恋愛相性</h1>
-<p>入口はシンプルに。結果は多角的に。<br>生年月日・数秘・恋愛傾向・文化背景を組み合わせて診断します。</p>
+<p>生年月日・数秘・恋愛傾向・文化背景を組み合わせて診断します。</p>
 <div class="badge">✨ まずは30秒・4項目だけ</div>
 </header>
 
@@ -48,7 +48,7 @@
 <div class="card"><h2>💗 相手から見たあなた</h2><div id="partnerView"></div></div>
 <div class="card"><h2>🌙 すれ違いやすいポイント</h2><div id="friction"></div></div>
 <div class="card"><h2>✨ ここから「今の2人」を深掘り</h2><p style="font-size:12px;color:#c9bdcf;line-height:1.8">追加は3問だけ。現在の関係・連絡頻度・恋愛で大切なものを答えると、今の状況に合わせて結果を更新します。</p><button class="primary" onclick="startDeep()">3問だけ追加する →</button></div>
-<div class="card premium"><h2>🔮 プレミアム詳細鑑定</h2><p>無料診断より深く、「相手の本音をどう読み解くか」「関係を深める具体的な行動」「2人の恋愛ストーリー」を個別化して文章化します。</p><button class="primary" onclick="premium()">詳細鑑定へ進む</button></div>
+<div class="card premium"><h2>🔮 プレミアム詳細鑑定(￥300)</h2><p>無料診断より深く、「相手の本音をどう読み解くか」「関係を深める具体的な行動」「2人の恋愛ストーリー」を個別化して文章化します。</p><button class="primary" onclick="premium()">詳細鑑定へ進む</button></div>
 <button class="secondary" onclick="go('input')">← もう一度診断する</button>
 </section>
 
@@ -57,7 +57,7 @@
 <section id="deepResult" class="page">
 <div class="card score"><div class="eyebrow">DEEP COMPATIBILITY</div><div class="num" id="deepTotal"></div><h2 id="deepTitle"></h2><p id="deepCopy"></p></div>
 <div class="card"><h2>💡 今の2人へのアドバイス</h2><div id="deepAdvice"></div></div>
-<div class="card premium"><h2>💕 もっと詳しく知りたい方へ</h2><p>ここまでの回答を使って、AIが2人だけの鑑定文を生成できます。APIキーはブラウザに置かず、サーバー側から安全に呼び出します。</p><button class="primary" onclick="requestAI()">AIで個別鑑定を生成する</button><div id="aiOutput" style="margin-top:15px"></div></div>
+<div class="card premium"><h2>💕 もっと詳しく知りたい方へ</h2><p>ここまでの回答を使って、AIが2人だけの鑑定文を生成できます。</p><button class="primary" onclick="requestAI()">AIで個別鑑定を生成する</button><div id="aiOutput" style="margin-top:15px"></div></div>
 <button class="secondary" onclick="go('result')">← 基本結果へ戻る</button>
 </section>
 <div class="footer">この診断は娯楽・自己理解を目的としたコンテンツです。星座・数秘・文化背景は傾向を見るための要素であり、個人を決めつけるものではありません。</div>
