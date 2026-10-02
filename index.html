@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>💕 ふたりの恋愛相性診断</title>
+<style>
+:root{--bg:#0e0a16;--card:#191224;--line:#342844;--text:#fff7fb;--muted:#c9bdcf;--pink:#ff5b9d;--purple:#8f78ff;--gold:#ffd166}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 5%,#39203e 0,transparent 30%),radial-gradient(circle at 90% 10%,#27204b 0,transparent 30%),var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Yu Gothic",Meiryo,sans-serif}.app{width:min(760px,calc(100% - 20px));margin:auto;padding:24px 0 60px}.hero{text-align:center;padding:20px 10px 24px}.eyebrow{font-size:11px;letter-spacing:.2em;color:#b9acc3}.hero h1{font-size:clamp(28px,7vw,44px);margin:12px 0;background:linear-gradient(90deg,#ff8fbd,#a995ff);color:transparent;background-clip:text}.hero p{font-size:13px;line-height:1.8;color:var(--muted)}.badge{display:inline-block;padding:8px 13px;border:1px solid var(--line);border-radius:999px;font-size:11px;color:#e8deeb}.card{background:rgba(25,18,36,.9);border:1px solid var(--line);border-radius:22px;padding:20px;margin-bottom:15px;box-shadow:0 18px 50px #0005}.card h2{font-size:17px;margin:0 0 16px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.person{padding:15px;background:#ffffff08;border:1px solid #ffffff12;border-radius:17px}.person h3{font-size:14px;margin:0 0 13px}.field{margin-top:12px}label{display:block;font-size:11px;color:#c9bdcf;margin-bottom:6px}input,select{width:100%;height:46px;border:1px solid #4b3b59;border-radius:11px;background:#100b17;color:#fff;padding:0 11px}button{font:inherit}.primary{width:100%;border:0;border-radius:13px;padding:15px;margin-top:16px;color:#fff;font-weight:800;background:linear-gradient(135deg,var(--pink),var(--purple));cursor:pointer}.secondary{width:100%;border:1px solid var(--line);border-radius:13px;padding:12px;background:#ffffff08;color:#eee;cursor:pointer}.error{display:none;color:#ff9fc3;font-size:12px;margin-top:9px}.page{display:none}.page.active{display:block}.loading{text-align:center;padding:45px}.orb{width:70px;height:70px;border-radius:50%;margin:auto auto 17px;background:radial-gradient(circle at 30% 25%,#fff,#ff6ba9 15%,#7865e8 70%);box-shadow:0 0 50px #ff5b9d88;animation:pulse 1.5s infinite alternate}@keyframes pulse{to{transform:scale(1.08)}}.score{text-align:center}.score .num{font-size:78px;font-weight:900;background:linear-gradient(90deg,#ff72ad,#a08bff);color:transparent;background-clip:text}.score h2{margin:0 0 7px}.score p{font-size:13px;color:var(--muted);line-height:1.8}.meter{height:8px;background:#2b2233;border-radius:99px;overflow:hidden}.meter i{display:block;height:100%;background:linear-gradient(90deg,var(--pink),var(--purple));border-radius:99px}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.stat{padding:13px;border:1px solid #ffffff12;background:#ffffff06;border-radius:15px}.stat strong{float:right}.stat small{display:block;color:#a99eaf;margin:8px 0}.bar{height:5px;background:#302638;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pink),var(--purple))}.insight{display:grid;grid-template-columns:38px 1fr;gap:11px;padding:13px 0;border-bottom:1px solid #ffffff10}.insight:last-child{border:0}.icon{width:38px;height:38px;border-radius:12px;background:#ff5b9d18;display:grid;place-items:center}.insight h3{font-size:13px;margin:0 0 5px}.insight p{font-size:12px;color:var(--muted);line-height:1.75;margin:0}.culture{border-color:#ffd16638;background:linear-gradient(135deg,#ffd1660c,#8f78ff0b)}.tag{font-size:10px;color:#ffe59a;letter-spacing:.12em}.question{font-size:18px;font-weight:800;line-height:1.5}.choices{display:grid;gap:8px}.choice input{display:none}.choice label{border:1px solid #ffffff14;background:#ffffff06;padding:13px;border-radius:12px;cursor:pointer;font-size:13px}.choice input:checked+label{border-color:#ff6aa9;background:#ff5b9d14}.progress{display:flex;gap:5px;margin-bottom:17px}.dot{height:4px;flex:1;background:#352a3d;border-radius:99px}.dot.on{background:linear-gradient(90deg,var(--pink),var(--purple))}.premium{border-color:#ffd16655;background:linear-gradient(135deg,#ffd1660d,#9b7cff12)}.premium h2{color:#ffe39a}.premium p{font-size:12px;line-height:1.8;color:var(--muted)}.footer{text-align:center;color:#71677a;font-size:10px;line-height:1.7;margin-top:20px}@media(max-width:560px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="hero">
+<div class="eyebrow">LOVE COMPATIBILITY ENGINE</div>
+<h1>💕 ふたりの恋愛相性</h1>
+<p>入口はシンプルに。結果は多角的に。<br>生年月日・数秘・恋愛傾向・文化背景を組み合わせて診断します。</p>
+<div class="badge">✨ まずは30秒・4項目だけ</div>
+</header>
+
+<section id="input" class="page active">
+<div class="card">
+<h2>ふたりの基本情報</h2>
+<div class="grid">
+<div class="person">
+<h3>♡ あなた</h3>
+<label>生年月日</label><input id="myDate" type="date">
+<div class="field"><label>国・文化圏</label><select id="myCulture"><option value="">選択</option><option>日本</option><option>韓国</option><option>中国</option><option>台湾</option><option>香港</option><option>フィリピン</option><option>アメリカ</option><option>その他</option></select></div>
+</div>
+<div class="person">
+<h3>♥ お相手</h3>
+<label>生年月日</label><input id="targetDate" type="date">
+<div class="field"><label>国・文化圏</label><select id="targetCulture"><option value="">選択</option><option>日本</option><option>韓国</option><option>中国</option><option>台湾</option><option>香港</option><option>フィリピン</option><option>アメリカ</option><option>その他</option></select></div>
+</div>
+</div>
+<div id="error" class="error"></div>
+<button class="primary" onclick="runBase()">✨ 2人の相性を診断する</button>
+</div>
+</section>
+
+<section id="loading" class="page"><div class="card loading"><div class="orb"></div><p id="loadText">ふたりの相性を読み解いています…</p></div></section>
+
+<section id="result" class="page">
+<div class="card score"><div class="eyebrow">BASIC COMPATIBILITY</div><div class="num" id="total"></div><h2 id="title"></h2><p id="copy"></p><div class="meter"><i id="meter"></i></div></div>
+<div class="card"><h2>💓 5つの相性</h2><div class="stats" id="stats"></div></div>
+<div class="card"><h2>🔮 ふたりが惹かれ合う理由</h2><div id="insights"></div></div>
+<div class="card culture"><div class="tag">CULTURE LOVE</div><h2 id="cultureTitle"></h2><p id="cultureText" ></p></div>
+<div class="card"><h2>💗 相手から見たあなた</h2><div id="partnerView"></div></div>
+<div class="card"><h2>🌙 すれ違いやすいポイント</h2><div id="friction"></div></div>
+<div class="card"><h2>✨ ここから「今の2人」を深掘り</h2><p style="font-size:12px;color:#c9bdcf;line-height:1.8">追加は3問だけ。現在の関係・連絡頻度・恋愛で大切なものを答えると、今の状況に合わせて結果を更新します。</p><button class="primary" onclick="startDeep()">3問だけ追加する →</button></div>
+<div class="card premium"><h2>🔮 プレミアム詳細鑑定</h2><p>無料診断より深く、「相手の本音をどう読み解くか」「関係を深める具体的な行動」「2人の恋愛ストーリー」を個別化して文章化します。</p><button class="primary" onclick="premium()">詳細鑑定へ進む</button></div>
+<button class="secondary" onclick="go('input')">← もう一度診断する</button>
+</section>
+
+<section id="deep" class="page"><div class="card"><div class="progress" id="progress"></div><div class="eyebrow">DEEP LOVE CHECK</div><div class="question" id="q"></div><div class="choices" id="choices"></div><div id="deepError" class="error">1つ選択してください。</div><button class="primary" onclick="nextQ()">次へ →</button></div></section>
+
+<section id="deepResult" class="page">
+<div class="card score"><div class="eyebrow">DEEP COMPATIBILITY</div><div class="num" id="deepTotal"></div><h2 id="deepTitle"></h2><p id="deepCopy"></p></div>
+<div class="card"><h2>💡 今の2人へのアドバイス</h2><div id="deepAdvice"></div></div>
+<div class="card premium"><h2>💕 もっと詳しく知りたい方へ</h2><p>ここまでの回答を使って、AIが2人だけの鑑定文を生成できます。APIキーはブラウザに置かず、サーバー側から安全に呼び出します。</p><button class="primary" onclick="requestAI()">AIで個別鑑定を生成する</button><div id="aiOutput" style="margin-top:15px"></div></div>
+<button class="secondary" onclick="go('result')">← 基本結果へ戻る</button>
+</section>
+<div class="footer">この診断は娯楽・自己理解を目的としたコンテンツです。星座・数秘・文化背景は傾向を見るための要素であり、個人を決めつけるものではありません。</div>
+</div>
+
+<script>
+const QUESTIONS=[
+{q:"今の2人の関係は？",a:[["片思い・気になる","片思い"],["友達・知り合い","友達"],["恋人","恋人"],["元恋人","元恋人"],["まだ会ったことがない","未対面"]]},
+{q:"最近の連絡は？",a:[["ほぼ毎日","毎日"],["時々","時々"],["どちらか一方から送ることが多い","偏り"],["最近少し減った","減少"],["ほとんどない","少ない"]]},
+{q:"恋愛で一番大切なのは？",a:[["安心感","安心"],["ドキドキ・ときめき","刺激"],["信頼して話せること","信頼"],["お互い自由でいられること","自由"],["将来を一緒に考えられること","将来"]]}
+];
+const state={};let qi=0;
+function go(id){document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));document.getElementById(id).classList.add("active");scrollTo({top:0,behavior:"smooth"})}
+function parseDate(s){let [y,m,d]=s.split("-").map(Number);return{y,m,d}}
+function zodiac(m,d){const starts=[[1,20,"水瓶座"],[2,19,"魚座"],[3,21,"牡羊座"],[4,20,"牡牛座"],[5,21,"双子座"],[6,22,"蟹座"],[7,23,"獅子座"],[8,23,"乙女座"],[9,23,"天秤座"],[10,24,"蠍座"],[11,23,"射手座"],[12,22,"山羊座"]];let r="山羊座";for(const [mm,dd,n] of starts)if(m>mm||(m===mm&&d>=dd))r=n;return r}
+function lifePath(y,m,d){let n=[...`${y}${m}${d}`].reduce((a,b)=>a+Number(b),0);while(n>9&&!([11,22,33].includes(n)))n=[...String(n)].reduce((a,b)=>a+Number(b),0);return n}
+const zg={牡羊座:"F",獅子座:"F",射手座:"F",牡牛座:"E",乙女座:"E",山羊座:"E",双子座:"A",天秤座:"A",水瓶座:"A",蟹座:"W",蠍座:"W",魚座:"W"};
+const zpair={"F-F":92,"E-E":91,"A-A":91,"W-W":93,"F-A":88,"A-F":88,"E-W":89,"W-E":89,"F-E":76,"E-F":76,"A-W":79,"W-A":79,"F-W":73,"W-F":73,"E-A":78,"A-E":78};
+function zScore(a,b){return zpair[zg[a]+"-"+zg[b]]||80}
+function nScore(a,b){if(a===b)return 95;let d=Math.abs(a-b);return d===1||d===8?91:d===2||d===7?87:d===3||d===6?82:76}
+function cultureScore(a,b){if(a===b)return 88;if((a==="日本"&&b==="韓国")||(a==="韓国"&&b==="日本"))return 86;return 82}
+function calc(){const z1=zodiac(state.my.m,state.my.d),z2=zodiac(state.target.m,state.target.d),n1=lifePath(state.my.y,state.my.m,state.my.d),n2=lifePath(state.target.y,state.target.m,state.target.d),zs=zScore(z1,z2),ns=nScore(n1,n2),cs=cultureScore(state.mc,state.tc);const total=Math.round(zs*.42+ns*.35+cs*.23);const love=Math.round(zs*.55+ns*.45),comm=Math.round(ns*.6+cs*.4),attr=Math.round(zs*.7+love*.3),trust=Math.round(ns*.65+cs*.35),future=Math.round(love*.45+trust*.55);return{z1,z2,n1,n2,zs,ns,cs,total,love,comm,attr,trust,future}}
+function runBase(){const md=myDate.value,td=targetDate.value,mc=myCulture.value,tc=targetCulture.value;if(!md||!td||!mc||!tc){error.textContent="2人の生年月日と国・文化圏を入力してください。";error.style.display="block";return}error.style.display="none";state.my=parseDate(md);state.target=parseDate(td);state.mc=mc;state.tc=tc;state.base=calc();go("loading");let i=0;const texts=["星座の組み合わせを分析しています…","数秘のリズムを照合しています…","恋愛相性をまとめています…"];loadText.textContent=texts[0];const t=setInterval(()=>{i++;if(i<texts.length)loadText.textContent=texts[i]},550);setTimeout(()=>{clearInterval(t);renderBase();go("result")},1900)}
+function label(s){return s>=90?"とても強い":s>=84?"かなり良好":s>=78?"良好":s>=70?"じっくり型":"育てる相性"}
+function renderBase(){const b=state.base;total.textContent=b.total+"%";title.textContent=label(b.total)+"な惹き合い";copy.textContent=b.total>=84?"共通する部分と違う部分のバランスがよく、「もっと知りたい」が生まれやすい組み合わせです。":b.total>=78?"違いが魅力になりやすく、知るほど関係が深まりやすい組み合わせです。":"相性は固定されたものではありません。お互いのペースを知るほど心地よい距離感が見つかります。";meter.style.width=b.total+"%";const arr=[["💓","恋愛相性",b.love],["💬","会話相性",b.comm],["🔥","ときめき",b.attr],["🤝","信頼",b.trust],["🏠","将来性",b.future]];stats.innerHTML=arr.map(x=>`<div class="stat">${x[0]} ${x[1]} <strong>${x[2]}%</strong><small>${label(x[2])}</small><div class="bar"><i style="width:${x[2]}%"></i></div></div>`).join("");insights.innerHTML=`<div class="insight"><div class="icon">✨</div><div><h3>${b.z1} × ${b.z2} の惹き合い</h3><p>星座のエレメントの組み合わせから、2人はそれぞれの個性を刺激しやすい関係です。</p></div></div><div class="insight"><div class="icon">🔢</div><div><h3>内面のリズム ${b.n1} × ${b.n2}</h3><p>数秘の組み合わせは、考え方や行動テンポの共通点と違いを見るヒントになります。</p></div></div><div class="insight"><div class="icon">💗</div><div><h3>恋愛での鍵</h3><p>相手を変えようとするより、相手のペースを知ること。小さな気持ちを言葉にすると安心感が育ちやすいでしょう。</p></div></div>`;const jpkr=(state.mc==="日本"&&state.tc==="韓国")||(state.mc==="韓国"&&state.tc==="日本");cultureTitle.textContent=jpkr?"🇯🇵×🇰🇷 日本×韓国の恋愛相性":"🌏 文化背景から見る2人";cultureText.textContent=jpkr?"日本と韓国という異なる文化背景は、連絡・愛情表現・距離感を理解するヒントになります。ただし文化だけで相手を判断せず、「本人はどう感じるか」を確認することが大切です。":"文化背景の違いは恋愛表現を理解する一つのヒントになります。ただし個人差が大きいため、実際の会話や行動を優先して見ていきましょう。";partnerView.innerHTML=`<div class="insight"><div class="icon">👀</div><div><h3>魅力として伝わりやすいところ</h3><p>${b.attr>=85?"明るさや自然な存在感が相手の興味を引きやすい傾向。":"相手のペースを尊重しながら接すると、あなたの良さが伝わりやすい傾向。"}</p></div></div>`;friction.innerHTML=`<div class="insight"><div class="icon">🌙</div><div><h3>すれ違いの芽</h3><p>返信速度や連絡量だけで相手の気持ちを判断しないこと。2人にとって心地よい頻度を探すことがポイントです。</p></div></div>`}
+function startDeep(){qi=0;state.answers=[];renderQ();go("deep")}
+function renderQ(){const q=QUESTIONS[qi];q.innerHTML=q.q;document.getElementById("q").textContent=q.q;choices.innerHTML=q.a.map((x,i)=>`<div class="choice"><input id="ch${i}" type="radio" name="ans" value="${x[1]}"><label for="ch${i}">${x[0]}</label></div>`).join("");progress.innerHTML=QUESTIONS.map((_,i)=>`<span class="dot ${i<=qi?"on":""}"></span>`).join("");deepError.style.display="none"}
+function nextQ(){const s=document.querySelector('input[name="ans"]:checked');if(!s){deepError.style.display="block";return}state.answers.push(s.value);if(qi<QUESTIONS.length-1){qi++;renderQ()}else{renderDeep();go("deepResult")}}
+function renderDeep(){let s=state.base.total;if(state.answers[0]==="恋人")s+=3;if(state.answers[1]==="毎日")s+=4;if(state.answers[1]==="減少"||state.answers[1]==="少ない")s-=3;if(["安心","信頼"].includes(state.answers[2]))s+=3;s=Math.max(60,Math.min(98,s));deepTotal.textContent=s+"%";deepTitle.textContent=label(s)+"な関係";deepCopy.textContent=state.answers[1]==="減少"||state.answers[1]==="少ない"?"今は距離を急に変えるより、自然な会話を少しずつ戻していくことがポイントです。":"相手の反応を見ながら、少しずつ距離を深めることで心地よい関係を作りやすそうです。";deepAdvice.innerHTML=`<div class="insight"><div class="icon">💬</div><div><h3>気持ちは少しだけ言葉に</h3><p>「嬉しかった」「また話したい」など、重くなりすぎない言葉から伝えてみましょう。</p></div></div><div class="insight"><div class="icon">🌙</div><div><h3>ペースを尊重する</h3><p>返信速度だけで気持ちを判断せず、相手の生活や性格も含めて見ていくことが大切です。</p></div></div>`}
+async function requestAI(){aiOutput.innerHTML="<p style='color:#c9bdcf;font-size:12px'>AIが2人専用の鑑定文を作成しています…</p>";try{const r=await fetch("/api/ai-analysis",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({profile:{my:state.my,target:state.target,myCulture:state.mc,targetCulture:state.tc},base:state.base,answers:state.answers})});const d=await r.json();if(!r.ok)throw new Error(d.error||"AI error");aiOutput.innerHTML=`<div class="insight"><div class="icon">🔮</div><div><h3>AI個別鑑定</h3><p>${escapeHtml(d.text).replace(/\n/g,"<br>")}</p></div></div>`}catch(e){aiOutput.innerHTML="<p style='color:#ff9fc3;font-size:12px'>AI鑑定の接続設定がまだ完了していません。server.js の環境変数を確認してください。</p>"}}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function premium(){alert("ここにStripe等の決済ページを接続します。")}
+</script>
+</body>
+</html>

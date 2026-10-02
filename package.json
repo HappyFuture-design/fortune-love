@@ -1,0 +1,18 @@
+{
+  "name": "koi-check-jp-kr",
+  "version": "1.0.0",
+  "private": true,
+  "description": "日本・韓国向け恋愛相性診断サイト",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "openai": "^4.77.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
